@@ -1,0 +1,11 @@
+a Tree consists of Nodes with parent-children relationships
+some nodes have parents, some have children
+the top node of a tree is called the root
+a node without any children is called Leaf (or External Node)
+Ancestors - Parent, grandparent, great-grandparent, etc
+Descendants - children, grandchildren
+Subtree - a Node and its descendants
+Depth - number of ancestors
+Height - maximum depth of any node
+the root has level 0, its children are on level 1, its grandchildren are level 2
+and so on
