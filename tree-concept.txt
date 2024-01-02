@@ -1,5 +1,45 @@
+--------------------------------------------------------------------------------
+My definitions
+
+Tree: consists of nodes with parent-children relationships
+Parent: upper node
+Child: Node below
+Root: the top node of a tree
+Leaf: any node that does not have child nodes
+  aka: Terminal Nodes, Outer Node, Terminal Node, External Node
+Edges: the connection of one node to other nodes
+  aka: Links
+
+Ancestors: parent, grandparent, great-grandparent, etc
+Descendants: children, grandchildren
+Neighbor: parent or child
+Subtree: a node and its descendants
+Internal Node: any node of a tree that has child nodes
+  aka: Inner Node, Inode, Branch Node
+Siblings: children of the same parent
+Forest: set of disjoint trees
+
+Depth of a Node: number of ancestors
+  or: number of edges along the unique path between it and the root node.
+  aka: Level
+Height of the Tree: maximum depth of any node
+Degree of a Node: number of children
+Degree of a Tree: maximum degree of a node in the tree
+Distance between two nodes: number of edges along the shortest path
+Size: number of nodes in the tree
+Breadth of the Tree: the number of leaves
+
+Invariants:
+  each node must be connected to only one parent
+  the root has no parent
+  no node can be its own ancestor (there are no cycles or loops)
+--------------------------------------------------------------------------------
+Loiane Groner Book
+
 a Tree consists of Nodes with parent-children relationships
 some nodes have parents, some have children
+each Node is a data structure consisting of a value and references to other
+nodes
 the top node of a tree is called the root
 a node without any children is called Leaf (or External Node)
 Ancestors - Parent, grandparent, great-grandparent, etc
@@ -9,3 +49,27 @@ Depth - number of ancestors
 Height - maximum depth of any node
 the root has level 0, its children are on level 1, its grandchildren are level 2
 and so on
+
+--------------------------------------------------------------------------------
+https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree
+
+--------------------------------------------------------------------------------
+Fundamentals of Computer Algorithms - Horowitz, Sahni (1984)
+
+A tree is a finite set of one or more nodes such that (i) there is
+a specially designated node called the root; (ii) the remaining nodes are
+partitioned into n >= 0 disjoint sets T1, ... , Tn where each of these sets is
+a tree. T1, ... , Tn are called the subtrees of the root.
+
+There are many terms which are often used when referring to trees. Consider
+the tree in Figure 2.5. This tree has 13 nodes, each data item of a
+node being a single letter for convenience. The root contains A, (though
+we will usually say node A), and we will normally draw trees with their root
+at the top. The number of subtrees of a node is called its degree. The degree
+of A is 3, of C is 1, and of F is 0. Nodes that have degree zero are called
+leaf or terminal nodes. The set {K, L, F, G, M, I, J} is the set of leaf nodes
+of Figure 2.5. The other nodes are referred to as nonterminals. The roots
+of the subtrees of a node, X, are the children of X. Xis the parent of its
+children. Thus the children of D are H, I, J; the parent of D is A.
+
+--------------------------------------------------------------------------------
