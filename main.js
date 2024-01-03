@@ -1,6 +1,4 @@
-//import {Node, Tree} from './default-tree'
-const Node = require('./default-tree.js').Node
-const Tree = require('./default-tree.js').Tree
+const {Node, Tree} = require('./default-tree.js')
 
 nA = new Node('A')
 
