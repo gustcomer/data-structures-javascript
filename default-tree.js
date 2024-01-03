@@ -1,5 +1,5 @@
 
-export class Tree{
+class Tree{
   constructor(root=null) {
     this.root = root
   }
@@ -9,21 +9,24 @@ export class Tree{
   }
 }
 
-export default class Node {
+class Node {
   constructor(key) {
     this.key = key
     this.children = []
   }
 
   addChild(key) {
-    c.push(key)
+    this.children.push(key)
   }
 
   print() {
     console.log(this.key);
 
-    for(c in this.children){
+    for(let c of this.children){
+      // console.log(c);
       c.print()
     }
   }
 }
+
+module.exports = {Tree, Node}
