@@ -8,18 +8,18 @@ test('Should create an empty default-tree', function () {
 
 test('Should create a simple tree', function () {
 
-  nA = new Node('A')
-  nB = new Node('B')
-  nC = new Node('C')
-  nD = new Node('D')
-  nE = new Node('E')
+  const nA = new Node('A')
+  const nB = new Node('B')
+  const nC = new Node('C')
+  const nD = new Node('D')
+  const nE = new Node('E')
 
   nA.addChild(nB)
   nA.addChild(nC)
   nA.addChild(nD)
   nB.addChild(nE)
 
-  t = new Tree(nA)
+  const t = new Tree(nA)
 
   expect(t).toBeDefined()
 });
