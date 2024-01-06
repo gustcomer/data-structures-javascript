@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------
+Introduction:
+
+  Binary Search Trees (BST) are Trees with some extra rules applied. It only
+  allows you to store nodes with lesses values on the left-hand side and nodes
+  with greater values on the right-hand side.
+
+Definitions:
+
+Left and Right Subtree: the children of each node can be divided in 2 subtrees
+Left and Right Child: each node can have at most 2 children.
+Key: is the data hold by each node
+  aka: Data, Value
+
+Invariants:
+
+  - any node can have at most two children
+  - is allowed to have zero nodes
+  - the data in the right Node is greater than the data in the left node
+  - each node is greater than its left child and smaller than its right child
+
+
+Notes:
+
+  - Take a look at the tree definitions. They are all valid.
+  - Each level of the BST can have a log 2 number of Nodes.
+  - no node has degree greater than 2
+  - skewed trees
+  - complete binary trees

@@ -1,5 +1,9 @@
 --------------------------------------------------------------------------------
-My definitions
+Introduction
+
+  Tree is a collection of Nodes with a hierarchical structure.
+
+Definitions
 
 Tree: consists of nodes with parent-children relationships
 Parent: upper node
@@ -9,6 +13,8 @@ Leaf: any node that does not have child nodes
   aka: Terminal Nodes, Outer Node, Terminal Node, External Node
 Edges: the connection of one node to other nodes
   aka: Links
+Data: the content of each Node
+  aka: Value, Key (in BST)
 
 Ancestors: parent, grandparent, great-grandparent, etc
 Descendants: children, grandchildren
@@ -33,6 +39,9 @@ Invariants:
   each node must be connected to only one parent
   the root has no parent
   no node can be its own ancestor (there are no cycles or loops)
+
+Notes:
+  You can think of a Tree as a Graph with a hierarchical structure
 --------------------------------------------------------------------------------
 Loiane Groner Book
 
