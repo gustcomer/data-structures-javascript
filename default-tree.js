@@ -10,17 +10,17 @@ class Tree{
 }
 
 class Node {
-  constructor(key) {
-    this.key = key
+  constructor(value) {
+    this.value = value
     this.children = []
   }
 
-  addChild(key) {
-    this.children.push(key)
+  addChild(value) {
+    this.children.push(value)
   }
 
   print() {
-    console.log(this.key);
+    console.log(this.value);
 
     for(let c of this.children){
       // console.log(c);
