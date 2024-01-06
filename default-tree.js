@@ -4,8 +4,8 @@ class Tree{
     this.root = root
   }
 
-  print() {
-    this.root.print()
+  toString() {
+    return this.root.toString().trim()
   }
 }
 
@@ -19,13 +19,14 @@ class Node {
     this.children.push(value)
   }
 
-  print() {
-    console.log(this.value);
+  toString() {
+    let text = this.value + ' '
 
     for(let c of this.children){
       // console.log(c);
-      c.print()
+      text+=c.toString()
     }
+    return text
   }
 }
 

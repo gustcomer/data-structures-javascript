@@ -16,4 +16,4 @@ nB.addChild(nE)
 
 const t = new Tree(nA)
 
-t.print()
+console.log( t.toString() );
