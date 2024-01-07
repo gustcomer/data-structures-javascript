@@ -19,6 +19,10 @@ class Node {
     this.children.push(value)
   }
 
+  isEqual(value) {
+    return this.value === value
+  }
+
   toString() {
     let text = this.value + ' '
 
