@@ -42,3 +42,19 @@ test('Should transform to string a simple tree', function () {
 
   expect(text).toBe('A B E C D')
 });
+
+test('Node should be compared to values', function () {
+
+  const nF = new Node('F')
+  const n14 = new Node(14)
+
+  const condition1 = nF.isEqual('F')
+  const condition2 = nF.isEqual('G')
+  const condition3 = n14.isEqual(14)
+  const condition4 = n14.isEqual(17)
+
+  expect(condition1).toBe(true)
+  expect(condition2).toBe(false)
+  expect(condition3).toBe(true)
+  expect(condition4).toBe(false)
+});
