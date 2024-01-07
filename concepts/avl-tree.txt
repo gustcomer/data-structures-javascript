@@ -1,0 +1,17 @@
+--------------------------------------------------------------------------------
+Adelson-Velskii and Landi’s (AVL Tree)
+
+Introduction
+
+  The AVL Tree is basically a self-balancing binary search tree.
+
+Definitions
+
+- Left, Right, Left-Right, Right-Left rotations: the rotations made after each
+insertion in order to keep the tree balanced
+- Balance Factor: the height difference between the Right Subtree and the Left
+Subtree of any Node
+
+Invariants
+
+- The heights of the two child subtrees of any node differ by at most one.
