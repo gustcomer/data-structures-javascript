@@ -11,6 +11,10 @@ class Tree{
   search(key) {
     return this.root.nodeSearch(key)
   }
+
+  getNode(key) {
+    return this.root.getNode(key)
+  }
 }
 
 class Node {
@@ -47,12 +51,18 @@ class Node {
       }
     }
     return false
-    /*
-    se o value do node for igual ao do key, retorna true
-    senão, chama a search de cada filho com o key em questão, se algum retornar
-    true, retorna true aqui.
-    caso nenhum returne true, retorna false
-    */
+  }
+
+  getNode(key){
+    if(this.value === key) {
+      return this
+    }
+    for(let c of this.children) {
+      if (c.nodeSearch(key)) {
+        return c
+      }
+    }
+    return null
   }
 }
 

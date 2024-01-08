@@ -12,14 +12,7 @@ nA.addChild(nD)
 nB.addChild(nE)
 
 t = new Tree(nA)
-condition1 = t.search('B')
-condition2 = t.search('D')
-condition3 = t.search('H')
-condition4 = t.search(14)
-condition5 = t.search('Z')
 
-console.log(condition1);
-console.log(condition2);
-console.log(condition3);
-console.log(condition4);
-console.log(condition5);
+nodeB = t.getNode('B')
+
+console.log(nodeB.toString());
