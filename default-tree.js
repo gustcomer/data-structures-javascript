@@ -15,6 +15,10 @@ class Tree{
   getNode(key) {
     return this.root.getNode(key)
   }
+
+  getRoot() {
+    return this.root
+  }
 }
 
 class Node {
