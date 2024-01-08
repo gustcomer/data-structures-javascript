@@ -59,3 +59,12 @@ test('Should search for keys in the tree', function () {
   expect(condition4).toBe(false)
   expect(condition5).toBe(false)
 });
+
+test('Should get specified Nodes', function () {
+
+  nodeB = t.getNode('B')
+  nodeF = t.getNode('F')
+
+  expect(nodeB.toString()).toBe('B E ')
+  expect(nodeF).toBeNull()
+});
