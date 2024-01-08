@@ -9,7 +9,7 @@ class Tree{
   }
 
   search(key) {
-    return this.root.nodeSearch(key)
+    return this.root.searchNode(key)
   }
 
   getNode(key) {
@@ -35,18 +35,17 @@ class Node {
     let text = this.value + ' '
 
     for(let c of this.children){
-      // console.log(c);
       text+=c.toString()
     }
     return text
   }
 
-  nodeSearch(key){
+  searchNode(key){
     if(this.value === key) {
       return true
     }
     for(let c of this.children) {
-      if (c.nodeSearch(key)) {
+      if (c.searchNode(key)) {
         return true
       }
     }
@@ -58,7 +57,7 @@ class Node {
       return this
     }
     for(let c of this.children) {
-      if (c.nodeSearch(key)) {
+      if (c.searchNode(key)) {
         return c
       }
     }
