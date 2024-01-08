@@ -68,3 +68,10 @@ test('Should get specified Nodes', function () {
   expect(nodeB.toString()).toBe('B E ')
   expect(nodeF).toBeNull()
 });
+
+test('Should return the root node', function () {
+
+  nodeRoot = t.getRoot()
+
+  expect(nodeRoot.value).toBe('A')
+});
