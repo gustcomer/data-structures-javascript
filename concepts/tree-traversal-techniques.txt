@@ -1,0 +1,28 @@
+Depth-first search
+
+  The search tree is deepended as much as possible before going to the next
+  sibling. Always recursively traverse the current node's left subtree. But the
+  order of the Nodes will depende on the type of the method
+
+  Pre-order 
+    NLR (Node-Left-Right)
+    1. Visit the current node
+    2. Recursively traverse the current node's left subtree
+    3. Recursively traverse the current node's right subtree
+  
+  In-order
+    LNR (Left-Node-Right)
+  
+  Post-Order
+    LRN (Left-Right-Node)
+
+We also reve the Rever pre-order, Reverse post-order and Reverse in-order
+
+In summary:
+
+  Pre-order: NLR
+  In-order: LNR
+  Post-order LRN
+  Reverse pre-order NRL
+  Reverse in-order RNL
+  Reverse post-order: RLN
