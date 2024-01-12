@@ -54,6 +54,7 @@ Notes:
   - The height of the root node is the maximum node height of all nodes in the
   tree.
   - The height of any leaf node is zero.
+  - The deepest leaf has depth equal to the height of the root node.
 
 --------------------------------------------------------------------------------
 Loiane Groner Book
