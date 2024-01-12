@@ -97,5 +97,5 @@ test('Should calculate height of Nodes', function () {
   expect(nodeB.height()).toBe(1)
   expect(nodeC.height()).toBe(0)
   expect(nodeD.height()).toBe(0)
-  //expect(nodeE.height()).toBe(0)
+  expect(nodeE.height()).toBe(0)
 });
