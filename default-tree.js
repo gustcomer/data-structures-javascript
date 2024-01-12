@@ -19,6 +19,7 @@ class Tree{
   getRoot() {
     return this.root
   }
+
 }
 
 class Node {
@@ -66,6 +67,10 @@ class Node {
       }
     }
     return null
+  }
+
+  isLeaf() {
+    return this.children.length === 0
   }
 }
 
