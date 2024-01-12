@@ -30,9 +30,9 @@ Depth of a Node: number of ancestors
   or: the inverse of Height.
   aka: Level
 Depth of a Tree: maximum depth or height of any node
+Height of the Node: total number of Edges from Leaf to that node in longest path
 Height of the Tree: maximum depth or height of any node
   or: the height of the root node
-Height of the Node: total number of Edges from Leaf to that node in longest path
 Degree of a Node: number of children
 Degree of a Tree: maximum degree of a node in the tree
 Distance between two nodes: number of edges along the shortest path
@@ -50,6 +50,11 @@ Notes:
   - The root node will be the Node with the highest Height
   - Depth is the inverse of Height. The root node will have the Highest height
   and at the same time will have Depth 0.
+  - The depth of the root node is 0.
+  - The height of the root node is the maximum node height of all nodes in the
+  tree.
+  - The height of any leaf node is zero.
+
 --------------------------------------------------------------------------------
 Loiane Groner Book
 
