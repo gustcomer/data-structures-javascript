@@ -84,3 +84,18 @@ test('Should tell when it is leaf', function () {
   expect(nodeD.isLeaf()).toBeTruthy()
   expect(nodeB.isLeaf()).toBeFalsy()
 });
+
+test('Should calculate height of Nodes', function () {
+
+  nodeA = t.getNode('A')
+  nodeB = t.getNode('B')
+  nodeC = t.getNode('C')
+  nodeD = t.getNode('D')
+  nodeE = t.getNode('E')
+
+  expect(nodeA.height()).toBe(2)
+  expect(nodeB.height()).toBe(1)
+  expect(nodeC.height()).toBe(0)
+  expect(nodeD.height()).toBe(0)
+  //expect(nodeE.height()).toBe(0)
+});
