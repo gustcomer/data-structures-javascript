@@ -63,7 +63,7 @@ class Node {
     }
     for(let c of this.children) {
       if (c.searchNode(key)) {
-        return c
+        return c.getNode(key)
       }
     }
     return null

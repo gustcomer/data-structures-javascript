@@ -13,11 +13,5 @@ nB.addChild(nE)
 
 t = new Tree(nA)
 
-console.log(nA.height());
-console.log(nB.height());
-console.log(nC.height());
-console.log(nD.height());
-console.log(nE.height());
-
-nodeE = t.getNode('E')
-console.log(nodeE);
+const nodeE = t.getNode('E')
+console.log(nodeE)
