@@ -72,6 +72,21 @@ class Node {
   isLeaf() {
     return this.children.length === 0
   }
+
+  height() {
+    let height = 0
+    let childrenHeight = []
+
+    for (let c of this.children) {
+      childrenHeight.push(c.height())
+    }
+
+    if(childrenHeight.length>0) {
+      height = Math.max(...childrenHeight) + 1
+    }
+
+    return height
+  }
 }
 
 module.exports = {Tree, Node}
