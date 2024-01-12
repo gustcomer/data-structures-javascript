@@ -75,3 +75,12 @@ test('Should return the root node', function () {
 
   expect(nodeRoot.value).toBe('A')
 });
+
+test('Should tell when it is leaf', function () {
+
+  nodeB = t.getNode('B')
+  nodeD = t.getNode('D')
+
+  expect(nodeD.isLeaf()).toBeTruthy()
+  expect(nodeB.isLeaf()).toBeFalsy()
+});
