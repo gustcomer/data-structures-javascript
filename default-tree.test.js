@@ -105,3 +105,16 @@ test('Should calculate height of a Tree', () => {
 
   expect(height).toBe(2)
 })
+
+test('Should record parent of the node', () => {
+  nodeA = t.getNode('A')
+  nodeB = t.getNode('B')
+  nodeC = t.getNode('C')
+  nodeD = t.getNode('D')
+  nodeE = t.getNode('E')
+
+
+  expect(nodeA.parent).toBeNull()
+  expect(nodeE.parent).toBe(nodeB)
+  expect(nodeC.parent).toBe(nodeA)
+})
