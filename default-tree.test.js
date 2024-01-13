@@ -99,3 +99,9 @@ test('Should calculate height of Nodes', function () {
   expect(nodeD.height()).toBe(0)
   expect(nodeE.height()).toBe(0)
 });
+
+test('Should calculate height of a Tree', () => {
+  height = t.height()
+
+  expect(height).toBe(2)
+})
