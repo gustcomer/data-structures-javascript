@@ -33,6 +33,7 @@ class Node {
   }
 
   addChild(node) {
+    node.parent = this
     this.children.push(node)
   }
 

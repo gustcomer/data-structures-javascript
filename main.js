@@ -14,3 +14,7 @@ nB.addChild(nE)
 t = new Tree(nA)
 
 console.log(t.height())
+console.log(nA);
+console.log(nD);
+console.log(nE);
+console.log(nE.parent);
