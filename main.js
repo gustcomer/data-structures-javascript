@@ -13,5 +13,4 @@ nB.addChild(nE)
 
 t = new Tree(nA)
 
-const nodeE = t.getNode('E')
-console.log(nodeE)
+console.log(t.height())
