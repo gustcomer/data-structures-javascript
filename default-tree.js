@@ -29,10 +29,11 @@ class Node {
   constructor(value) {
     this.value = value
     this.children = []
+    this.parent = null
   }
 
-  addChild(value) {
-    this.children.push(value)
+  addChild(node) {
+    this.children.push(node)
   }
 
   isEqual(value) {
