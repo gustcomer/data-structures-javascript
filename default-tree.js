@@ -92,6 +92,17 @@ class Node {
 
     return height
   }
+
+  depth() {
+    let depthValue = 0
+
+    if(this.parent === null) {
+      return depthValue
+    }
+    else {
+      return this.parent.depth() + 1
+    }
+  }
 }
 
 module.exports = {Tree, Node}

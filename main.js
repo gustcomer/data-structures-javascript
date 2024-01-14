@@ -18,3 +18,6 @@ console.log(nA);
 console.log(nD);
 console.log(nE);
 console.log(nE.parent);
+console.log(nA.depth());
+console.log(nB.depth());
+console.log(nE.depth());
