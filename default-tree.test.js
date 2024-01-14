@@ -133,3 +133,9 @@ test('Should calculate depth of Node', () => {
   expect(nodeD.depth()).toBe(1)
   expect(nodeE.depth()).toBe(2)
 })
+
+test('Should calculate depth of a Tree', () => {
+  depth = t.depth()
+
+  expect(depth).toBe(2)
+})
