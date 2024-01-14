@@ -1,4 +1,4 @@
-const {Node, Tree} = require('./default-tree.js')
+const {Node, Tree} = require('./tree.js')
 
 let t;
 
