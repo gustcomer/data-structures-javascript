@@ -23,6 +23,10 @@ class Tree{
   height() {
     return this.root.height()
   }
+
+  depth() {
+    return this.root.height()
+  }
 }
 
 class Node {
