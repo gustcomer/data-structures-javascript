@@ -118,3 +118,18 @@ test('Should record parent of the node', () => {
   expect(nodeE.parent).toBe(nodeB)
   expect(nodeC.parent).toBe(nodeA)
 })
+
+test('Should calculate depth of Node', () => {
+  nodeA = t.getNode('A')
+  nodeB = t.getNode('B')
+  nodeC = t.getNode('C')
+  nodeD = t.getNode('D')
+  nodeE = t.getNode('E')
+
+
+  expect(nodeA.depth()).toBe(0)
+  expect(nodeB.depth()).toBe(1)
+  expect(nodeC.depth()).toBe(1)
+  expect(nodeD.depth()).toBe(1)
+  expect(nodeE.depth()).toBe(2)
+})
