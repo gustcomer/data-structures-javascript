@@ -19,6 +19,9 @@ Invariants:
   - is allowed to have zero nodes
   - the data in the right Node is greater than the data in the left node
   - each node is greater than its left child and smaller than its right child
+  - you can only insert a new element throught the Tree. you can't directly
+  insert as some specified Nodes child, because the Tree will do its
+  calculations to assure its invariants.
 
 
 Notes:
