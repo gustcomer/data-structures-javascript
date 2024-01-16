@@ -10,6 +10,7 @@ n0 = new Node(0)
 n2 = new Node(2)
 
 bst = new BinarySearchTree()
+
 bst.insert(n5)
 bst.insert(n6)
 bst.insert(n4)
@@ -19,3 +20,4 @@ bst.insert(n0)
 bst.insert(n2)
 
 console.log(n6.toString())
+console.log(bst.toString());

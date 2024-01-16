@@ -12,6 +12,10 @@ class BinarySearchTree {
       this.root.insert(node)
     }
   }
+
+  toString() {
+    return this.root.toString().trim()
+  }
 }
 
 class Node {
