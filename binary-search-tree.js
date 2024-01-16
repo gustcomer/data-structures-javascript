@@ -40,6 +40,19 @@ class Node {
       }
     }
   }
+
+  toString() {
+    let text = this.value + ' '
+
+    if(this.leftNode!=null) {
+      text+=this.leftNode.toString()
+    }
+    if(this.rightNode!=null) {
+      text+=this.rightNode.toString()
+    }
+
+    return text
+  }
 }
 
 module.exports = {BinarySearchTree, Node}

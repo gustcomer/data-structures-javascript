@@ -18,5 +18,4 @@ bst.insert(n12)
 bst.insert(n0)
 bst.insert(n2)
 
-console.log(bst)
-
+console.log(n6.toString())
