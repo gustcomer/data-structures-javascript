@@ -4,11 +4,13 @@ class BinarySearchTree {
     this.root = undefined
   }
 
-  toString() {
+  insert(node){
     if(this.root == null) {
-      return ''
+      this.root = node
     }
-    return this.root.toString().trim()
+    else {
+      this.root.insert(node)
+    }
   }
 }
 
@@ -20,13 +22,23 @@ class Node {
     this.rightNode = null
   }
 
-  toString() {
-    let text = this.value + ' '
-
-    for(let c of this.children){
-      text+=c.toString()
+  insert(node) {
+    if(node.value < this.value) {
+      if(this.leftNode == null) {
+        this.leftNode = node
+      }
+      else {
+        this.leftNode.insert(node)
+      }
     }
-    return text
+    else {
+      if(this.rightNode == null) {
+        this.rightNode = node
+      }
+      else {
+        this.rightNode.insert(node)
+      }
+    }
   }
 }
 

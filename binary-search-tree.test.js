@@ -13,3 +13,4 @@ test('Should create a simple Binary Search Tree', function () {
 
   expect(bst).toBeDefined()
 });
+
