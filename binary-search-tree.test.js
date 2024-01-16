@@ -36,6 +36,10 @@ test('Should create a simple Binary Search Tree', function () {
   expect(bst).toBeDefined()
 });
 
-test('Should print some Node subtree', () => {
+test('Should return string of Node', () => {
   expect(n6.toString()).toBe('6 10 12 ')
+})
+
+test('Should return string of tree', () => {
+  expect(bst.toString()).toBe('5 4 0 2 6 10 12')
 })
