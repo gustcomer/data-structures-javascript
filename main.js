@@ -21,3 +21,9 @@ bst.insert(n2)
 
 console.log(n6.toString())
 console.log(bst.toString());
+
+console.log(n5.searchNode(5));
+console.log(n5.searchNode(6));
+console.log(n5.searchNode(7));
+console.log(n5.searchNode(10));
+console.log(n5.searchNode(11));
