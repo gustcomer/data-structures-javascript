@@ -13,6 +13,11 @@ Left and Right Child: each node can have at most 2 children.
 Key: is the data hold by each node
   aka: Data, Value
 
+Actions:
+
+Insert: the Nodes will be inserted in it's proper ordered place and not added as
+child.
+
 Invariants:
 
   - any node can have at most two children
