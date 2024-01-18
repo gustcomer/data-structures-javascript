@@ -60,3 +60,11 @@ test('Should return true if the key in a tree search is present', () => {
   expect(bst.searchNode(100)).toBe(false)
   expect(bst.searchNode(8)).toBe(false)
 })
+
+test('Should return true if the key in a tree search is present', () => {
+  expect(n5.getNode(5).value).toBe(5)
+  expect(n5.getNode(100)).toBe(null)
+  expect(n6.getNode(10).value).toBe(10)
+  expect(n0.getNode(0).value).toBe(0)
+  expect(n5.getNode(12).value).toBe(12)
+})
