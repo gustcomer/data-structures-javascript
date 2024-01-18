@@ -19,11 +19,8 @@ bst.insert(n12)
 bst.insert(n0)
 bst.insert(n2)
 
-console.log(n6.toString())
-console.log(bst.toString());
-
-console.log(n5.searchNode(5));
-console.log(n5.searchNode(6));
-console.log(n5.searchNode(7));
-console.log(n5.searchNode(10));
-console.log(n5.searchNode(11));
+console.log(bst.search(5));
+console.log(bst.search(0));
+console.log(bst.search(12));
+console.log(bst.search(100));
+console.log(bst.search(2));
