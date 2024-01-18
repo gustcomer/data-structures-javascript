@@ -13,7 +13,7 @@ class BinarySearchTree {
     }
   }
 
-  search(key) {
+  searchNode(key) {
     return this.root.searchNode(key)
   }
 

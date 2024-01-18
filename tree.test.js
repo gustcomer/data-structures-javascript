@@ -47,11 +47,11 @@ test('Node should be compared to values', function () {
 
 test('Should search for keys in the tree', function () {
 
-  condition1 = t.search('B')
-  condition2 = t.search('D')
-  condition3 = t.search('H')
-  condition4 = t.search(14)
-  condition5 = t.search('Z')
+  condition1 = t.searchNode('B')
+  condition2 = t.searchNode('D')
+  condition3 = t.searchNode('H')
+  condition4 = t.searchNode(14)
+  condition5 = t.searchNode('Z')
 
   expect(condition1).toBe(true)
   expect(condition2).toBe(true)

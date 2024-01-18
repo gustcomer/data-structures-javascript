@@ -8,7 +8,7 @@ class Tree{
     return this.root.toString().trim()
   }
 
-  search(key) {
+  searchNode(key) {
     return this.root.searchNode(key)
   }
 
