@@ -62,6 +62,19 @@ class Node {
     return false
   }
 
+  getNode(key){
+    if(this.value === key){
+      return this
+    }
+    if(key < this.value && this.leftNode){
+      return this.leftNode.getNode(key)
+    }
+    if (key > this.value && this.rightNode){
+      return this.rightNode.getNode(key)
+    }
+    return null
+  }
+
   toString() {
     let text = this.value + ' '
 
