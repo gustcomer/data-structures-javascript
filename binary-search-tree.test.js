@@ -52,3 +52,11 @@ test('Should return true if the key matches some Node or subNode value', () => {
   expect(n5.searchNode(200)).toBe(false)
   expect(n5.searchNode(12)).toBe(true)
 })
+
+test('Should return true if the key in a tree search is present', () => {
+  expect(bst.search(5)).toBe(true)
+  expect(bst.search(0)).toBe(true)
+  expect(bst.search(12)).toBe(true)
+  expect(bst.search(100)).toBe(false)
+  expect(bst.search(8)).toBe(false)
+})
