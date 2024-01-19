@@ -17,6 +17,10 @@ class BinarySearchTree {
     return this.root.searchNode(key)
   }
 
+  getNode(key) {
+    return this.root.getNode(key)
+  }
+
   toString() {
     return this.root.toString().trim()
   }
