@@ -91,6 +91,10 @@ class Node {
 
     return text
   }
+
+  isLeaf() {
+    return this.leftNode == null && this.rightNode == null
+  }
 }
 
 module.exports = {BinarySearchTree, Node}

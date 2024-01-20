@@ -19,8 +19,8 @@ bst.insert(n12)
 bst.insert(n0)
 bst.insert(n2)
 
-console.log(bst.search(5));
-console.log(bst.search(0));
-console.log(bst.search(12));
-console.log(bst.search(100));
-console.log(bst.search(2));
+console.log(n5.isLeaf());
+console.log(n12.isLeaf());
+console.log(n0.isLeaf());
+console.log(n2.isLeaf());
+console.log(n4.isLeaf());
