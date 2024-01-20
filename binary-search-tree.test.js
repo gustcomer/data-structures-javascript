@@ -1,10 +1,10 @@
 const {Node, BinarySearchTree} = require('./binary-search-tree.js')
 
 let bst;
+
 let n5
 let n6
 let n4
-
 let n10
 let n12
 let n0
@@ -14,7 +14,6 @@ beforeEach(() => {
   n5 = new Node(5)
   n6 = new Node(6)
   n4 = new Node(4)
-  
   n10 = new Node(10)
   n12 = new Node(12)
   n0 = new Node(0)
@@ -75,4 +74,12 @@ test('Should return some node if the key is present in the bst', () => {
   expect(bst.getNode(10).value).toBe(10)
   expect(bst.getNode(0).value).toBe(0)
   expect(bst.getNode(12).value).toBe(12)
+})
+
+test('Should check if node is leaf', () => {
+  expect(n5.isLeaf()).toBeFalsy()
+  expect(n12.isLeaf()).toBeTruthy()
+  expect(n0.isLeaf()).toBeFalsy()
+  expect(n2.isLeaf()).toBeTruthy()
+  expect(n4.isLeaf()).toBeFalsy()
 })
